@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "provider-crm"
+version = "0.1.0"
+description = "ProviderCRM - мини-CMS/CRM для интернет-провайдера. Тренировочный проект для практики SOLID, DDD и архитектурных подходов."
+authors = ["Yury Petrov <gderpov@yandex.ru>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "^0.118.0"
+uvicorn = {extras = ["standard"], version = "^0.37.0"}
+sqlalchemy = {extras = ["asyncio"], version = "^2.0.43"}
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.4.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
